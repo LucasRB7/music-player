@@ -3,7 +3,21 @@
     padding: 0;
 }
 body{    
-    width: 380px;
+    width: 100%;    
     display: grid;
     justify-items: center;
+    background-color: black;
+    color: aliceblue;
+}
+main{
+    width: 380px;    
+}
+.categorias{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+}
+
+.flashback img{
+    width: 100%;    
+    cursor: pointer;
 }
