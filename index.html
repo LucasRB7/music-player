@@ -20,14 +20,29 @@
 </head>
 <body>
     <main>
-        <i class="fa-solid fa-play" style="color: #e00000;"></i><h2>Music Player</h2>
-        <h1 class="Playlist">My Favorite Playlist</h1>
-        <div class="categorias">
-            <div class="flashback"><img src="src/media/music/flashback/frente.jpg" alt="foto de capa"></div>
-            <div class="forro">Fórro</div>
-            <div class="gospel">Gospel</div>
-            <div class="rock">Rock</div>
-        </div>        
+        <section class="inicio">
+            <i class="fa-solid fa-play" style="color: #e00000;"></i><h2>Music Player</h2>
+            <h1 class="Playlist">My Favorite Playlist</h1>
+            <section class="categorias">
+                <div class="flashback">
+                    <img src="src/media/music/flashback/frente.jpg" alt="foto de capa flashback">                
+                </div>
+                <div class="forro">Fórro</div>
+                <div class="gospel">Gospel</div>
+                <div class="rock">Rock</div>
+             </section>
+        </section>
+        
+        <section class="player">
+            <div class="controles">
+                
+                <button><img src="/src/media/icons/Previous.png" alt="Voltar faixa"></button>
+                <button><img class="play" src="/src/media/icons/Play.png" alt="Tocar Faixa"><img class="pause" src="/src/media/icons/Pause.png" alt="Pausar Faixa"></button>
+                <button><img src="/src/media/icons/Next.png" alt="Proxima faixa"></button>
+
+                <h2 class="titulo"></h2>
+            </div>            
+        </section>        
     </main>
 </body>
 </html>
