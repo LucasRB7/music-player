@@ -15,7 +15,7 @@ main{
     justify-items: center;
 }
 .inicio{
-    display: none;
+    display: display;
 }
 .categorias{
     display: grid;
@@ -27,7 +27,7 @@ main{
     cursor: pointer;
 }
 .player{
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     width: 100%;

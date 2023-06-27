@@ -80,18 +80,30 @@ const musicasFlashback = [
     },
 ]
 
+//Capturando para a mudança de telas
+const categoriaFlashback = document.getElementById("categoriaFlashback")
+const telaInicial = document.getElementById("telaInicial")
+const telaPlayer = document.getElementById("telaPlayer")
+
 //capturando os botoes da tecla
 const play = document.getElementById("play");
 const pause = document.getElementById("pause");
 
 //controle do player
 const player = document.getElementById("player");
-const titulo = document.getElementById("titulo")
+const titulo = document.getElementById("titulo");
+
+//setando de inicio a primeira musica a ser tocada
+player.src = musicasFlashback[0].path;
+
+categoriaFlashback.addEventListener("click", ()=>{
+    telaInicial.style.display = "none";
+    telaPlayer.style.display = "flex"    
+})
 
 play.addEventListener("click", ()=>{
     play.style.display = "none"
-    pause.style.display = "block"
-    player.src = musicasFlashback[0].path;
+    pause.style.display = "block"    
     player.play();    
     titulo.innerHTML = musicasFlashback[0].displayName
 })
