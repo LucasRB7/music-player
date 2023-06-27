@@ -5,7 +5,6 @@
 body{    
     width: 380px;    
     display: grid;
-    justify-items: center;
     background-color: black;
     color: aliceblue;
 }

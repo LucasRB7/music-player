@@ -35,17 +35,24 @@
         
         <section class="player" id="telaPlayer">
             <div class="controles">                
-                <button><img src="src/media/icons/Previous.png" alt="Voltar faixa"></button>
+                <button>
+                    <img src="src/media/icons/Previous.png" alt="Voltar faixa">
+                </button>
                 <button>
                     <img class="play" id="play" src="src/media/icons/Play.png" alt="Tocar Faixa">
                     <img class="pause" id="pause" src="src/media/icons/Pause.png" alt="Pausar Faixa">
                 </button>
-                <button><img src="src/media/icons/Next.png" alt="Proxima faixa"></button>
-
-                <h2 id="titulo" class="titulo"></h2>
-                <audio id="player" hidden controls src=""></audio>
-            </div>            
-        </section>        
+                <button id="btnNext">
+                    <img src="src/media/icons/Next.png" alt="Proxima faixa">
+                </button>
+            </div>    
+        </section> 
+        <div>
+            <h2 id="titulo" class="titulo"></h2>
+            <h2 id="artista" class="titulo"></h2>
+            <audio id="player" hidden controls src=""></audio>                
+        </div>               
     </main>
+    
 </body>
 </html>

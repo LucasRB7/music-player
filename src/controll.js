@@ -88,10 +88,12 @@ const telaPlayer = document.getElementById("telaPlayer")
 //capturando os botoes da tecla
 const play = document.getElementById("play");
 const pause = document.getElementById("pause");
+const btnNext = document.getElementById("btnNext")
 
 //controle do player
 const player = document.getElementById("player");
 const titulo = document.getElementById("titulo");
+const artista = document.getElementById("artista");
 
 //setando de inicio a primeira musica a ser tocada
 player.src = musicasFlashback[0].path;
@@ -105,10 +107,19 @@ play.addEventListener("click", ()=>{
     play.style.display = "none"
     pause.style.display = "block"    
     player.play();    
-    titulo.innerHTML = musicasFlashback[0].displayName
+    titulo.innerHTML = `Musica: ${musicasFlashback[0].displayName}`
+    artista.innerHTML = `Artista: ${musicasFlashback[0].artist}`
 })
 pause.addEventListener("click", ()=>{
     play.style.display = "block"
     pause.style.display = "none"
     player.pause();
+})
+
+btnNext.addEventListener("click", ()=>{
+    player.src = musicasFlashback[+1].path;
+    titulo.innerHTML = `Musica: ${musicasFlashback[+1].displayName}`
+    artista.innerHTML = `Artista: ${musicasFlashback[+1].artist}`
+    player.play();
+
 })
